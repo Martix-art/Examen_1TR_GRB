@@ -44,7 +44,7 @@ public class obstaculos : MonoBehaviour
         }
          
     }
-    //crear una esfera en una cosicion random
+    //crear una esfera en una posicion random
     void Esfera()
     {
         randomNumber = Random.Range(-200f, 200f);
