@@ -38,19 +38,14 @@ public class shapeship : MonoBehaviour
         }
         */
         //Variable float que obtiene el valor del eje horizontal y vertical
-        float desplXleft = Input.GetAxis("Horizontal") * speed;
-        transform.Translate(Vector3.left * Time.deltaTime * desplXleft);
-        float desplXright = Input.GetAxis("Horizontal") * speed;
-        transform.Translate(Vector3.left * Time.deltaTime * desplXright);
+        float desplX = Input.GetAxis("Horizontal") * speed;
+        transform.Translate(Vector3.left * Time.deltaTime * desplX);
+       
 
         float desplY = Input.GetAxis("Vertical") * speed;
         transform.Translate(Vector3.up * Time.deltaTime * desplY);
 
-        float translation = Input.GetAxis ("Vertical") * speed;
-
-        translation *= Time.deltaTime;
-        
-        transform.Translate(0, 0, translation);
+       
 
         // transform.Translate(0, 0, translation);
 
